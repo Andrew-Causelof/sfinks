@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-/** Admin side*/
+/** Admin side  */
 Route::group(['middleware' => ['status', 'auth']], function () {
     $groupData = [
       'namespace' => 'Blog\Admin',
